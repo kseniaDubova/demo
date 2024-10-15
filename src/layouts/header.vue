@@ -32,7 +32,7 @@ export default {
 
 <style lang="scss">
 .header-layouts {
-    z-index: 20;
+    z-index: 30;
 
     display: flex;
     align-items: flex-end;
