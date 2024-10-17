@@ -1,7 +1,14 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import "@/assets/style/main.scss";
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).mount('#app');
+AOS.init();
+
+router.afterEach(() => {
+    AOS.refresh();
+})

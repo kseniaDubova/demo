@@ -1,10 +1,9 @@
 <template>
-  <div class="ui-card-black" :class="getViewClass">
-    <dvi class="ui-card-black__box" :class="getViewClass">
-        <p class="ui-card-black__text">{{ text }}</p>        
-    </dvi>
-
-  </div>
+    <div class="ui-card-black" :class="getViewClass">
+        <div class="ui-card-black__box" :class="getViewClass">
+            <p class="ui-card-black__text">{{ text }}</p>        
+        </div>
+    </div>
 </template>
 
 <script>
@@ -44,7 +43,6 @@ export default {
     display: flex;
     padding: 0 5%;
 
-
     &__box {
         background: black;
         padding: 0px 50px;
@@ -57,15 +55,26 @@ export default {
         font-size: 38px;
         text-align: center;
         font-family: "Montserrat-Light";
+        transition: all 0.3s ease-in-out;
     }
 }
 .ui-card-black--right {
     justify-content: right;
     border-radius: 80px 40px 40px 80px;
+    transition: all 0.3s ease-in-out;
+
+    :hover {
+        transform: rotate(-2deg);
+    }
 }
 .ui-card-black--left {
     justify-content: left;
     border-radius: 40px 80px 80px 40px;
+    transition: all 0.3s ease-in-out;
+
+    :hover {
+        transform: rotate(2deg);
+    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -81,16 +90,16 @@ export default {
 }
 @media screen and (max-width: 760px) {
     .ui-card-black {
-    &__box {
-        width: 100%;
-        padding: 7px 30px;
-        justify-content: center;
-        border-radius: 50px;
-    }
+        &__box {
+            width: 100%;
+            padding: 7px 30px;
+            justify-content: center;
+            border-radius: 50px;
+        }
 
-    &__text {
-        font-size: 20px;
+        &__text {
+            font-size: 20px;
+        }
     }
-}
 }
 </style>

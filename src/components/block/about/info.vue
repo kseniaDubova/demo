@@ -4,7 +4,14 @@
         v-for="block in getCell()"
         :key="block.id"
         >
-            <UICardBlack :view="block.view" :text="block.text" />
+            <UICardBlack
+                :data-aos="block.view === 'left' ? 'slide-left' : 'slide-right'"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
+                :view="block.view"
+                :text="block.text" />
         </div>
     </div>
 
@@ -62,6 +69,7 @@ export default {
     gap: 50px;
     margin-top: 100px;
 }
+
 @media screen and (max-width: 760px) {
     .block-about-info {
         gap: 30px;

@@ -1,7 +1,15 @@
 <template>
   <div class="block-about">
     <div class="block-about__label">
-        <h2 class="block-about__label-text">Мы создаём масштабируемые e-commerce решения и предоставляем круглосуточную техподдержку 24/7</h2>
+        <h2
+         data-aos="slide-right" 
+         data-aos-offset="-500"
+         data-aos-delay="0"
+         data-aos-duration="3000"
+         data-aos-easing="ease-in-out"
+         data-aos-once="true"
+         class="block-about__label-text">
+         Мы создаём масштабируемые e-commerce решения и предоставляем круглосуточную техподдержку 24/7</h2>
         <img src="@/assets/img/about/linesAbout1.svg">
     </div>
     <div class="block-about__background">
@@ -20,7 +28,7 @@ export default {
 
     components: {
         BlockAboutInfo,
-    }
+    },
 
 }
 </script>
