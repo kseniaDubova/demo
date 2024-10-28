@@ -1,14 +1,15 @@
 <template>
   <div class="home-content">
     <BlockStart class="home-content__start"/>
-    <BlockAbout />
-    <!-- <div class="t">jghihigiugiugffvvfvyftyfyy</div> -->
+    <BlockAbout class="home-content__about"/>
+    <BlockServices />
   </div>
 </template>
 
 <script>
 import BlockStart from '@/components/block/start/start.vue';
 import BlockAbout from '@/components/block/about/about.vue';
+import BlockServices from '@/components/block/services/services.vue';
 
 export default {
     name: "HomeContent",
@@ -16,6 +17,7 @@ export default {
     components: {
         BlockStart,
         BlockAbout,
+        BlockServices,
     }
 
 }
@@ -27,6 +29,10 @@ export default {
   //overflow-x: hidden;
   &__start {
     height: 900px;
+    margin-bottom: 200px;
+  }
+
+  &__about {
     margin-bottom: 200px;
   }
 }
