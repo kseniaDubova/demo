@@ -1,6 +1,15 @@
 <template>
     <div class="block-services-info">
-        <h2 class="block-services-info__label" >Что мы можем?</h2>
+        <h2 
+            data-aos="slide-left" 
+            data-aos-offset="-500"
+            data-aos-delay="0"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in"
+            data-aos-once="true"
+            class="block-services-info__label" >
+            Что мы можем?
+        </h2>
 
         <div class="block-services-info__cells">
             <div 
@@ -102,6 +111,25 @@ export default {
         grid-template-columns: 1fr 1fr;
         padding: 5%;
         gap: 5%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .block-services-info {
+        height: 2900px;
+
+        &__label
+        {
+            font-size: 60px;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        &__cells {
+
+            height: auto;
+            grid-template-columns: 1fr;
+            gap: 2%;
+        }
     }
 }
 </style>

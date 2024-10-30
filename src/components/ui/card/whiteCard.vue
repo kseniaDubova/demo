@@ -72,4 +72,45 @@ export default {
         box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.1);
     }
 }
+
+@media screen and (max-width: 1600px) {
+    .ui-white-card {
+
+        &__info {
+
+            &-label {
+                font-size: 31px;
+            }
+
+            &-text {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 760px) {
+    .ui-white-card {
+
+        padding: 5% 7%;
+
+        &__img {
+            display: none;
+        }
+        
+
+        &__info {
+            margin-left: 0;
+
+            &-label {
+                line-height: 40px;
+                font-size: 28px;
+            }
+
+            &-text {
+                line-height: 30px;
+                font-size: 16px;
+            }
+        }
+    }
+}
 </style>

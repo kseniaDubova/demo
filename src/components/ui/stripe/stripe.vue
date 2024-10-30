@@ -22,8 +22,8 @@ export default {
       default: '#000',
     },
     width: {
-      type: Number,
-      default: 1,
+      type: String,
+      default: '100',
     },
     height: {
       type: Number,
@@ -71,12 +71,19 @@ export default {
         calculatedMargin = baseMargin;
       }
 
+      const angleInRadians = (Math.abs(this.rotate) * Math.PI) / 180;
+      const adjustedWidth = this.width / Math.cos(angleInRadians);
+
+      const offsetLeft = (Math.tan(angleInRadians) * window.innerHeight) / 2;
+
       return {
         backgroundColor: this.color,
-        width: `100%`,
+        width: `${adjustedWidth}%`,
         height: `${Math.abs(calculatedHeight)}px`, 
         transform: `rotate(${this.rotate}deg)`,
         margin: `${Math.abs(calculatedMargin)}px 0`, 
+        marginLeft: `-${offsetLeft}px`,
+        marginRight: `-${offsetLeft}px`,
       };
     },
   },

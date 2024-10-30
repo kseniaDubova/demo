@@ -2,22 +2,26 @@
     <div class="block-start">
       <BlockStartText/>
       <div class="block-start__images">
-          <img class="block-start__images-long" src="@/assets/img/start/long-line.svg">
+          <UIStripe class="block-start__images-long" color="white" :rotate="-20" :margin="15" width="110" :height="3" :count="5" />
+          <!-- <img class="block-start__images-long" src="@/assets/img/start/long-line.svg"> -->
           <img class="block-start__images-start box" src="@/assets/img/start/rectangle.svg">
           <img class="block-start__images-shadow" src="@/assets/img/start/rectangle.svg">
-          <img class="block-start__images-short" src="@/assets/img/start/short-line.svg">        
+          <UIStripe class="block-start__images-short" color="white" :rotate="20" :margin="15" width="110" :height="3" :count="7" />
+          <!-- <img class="block-start__images-short" src="@/assets/img/start/short-line.svg">-->
       </div>
     </div>
 </template>
   
 <script>
 import BlockStartText from '@/components/block/start/text.vue';
+import UIStripe from '@/components/ui/stripe/stripe.vue';
 
 export default {
   name: "BlockStart",
 
   components: {
     BlockStartText,
+    UIStripe,
   }
 };
 
@@ -43,7 +47,8 @@ export default {
   
       &-long {
         position: absolute;
-        top: 50px;
+        width: 100%;
+        top: 350px;
         left: 0;
       }
   
@@ -67,10 +72,10 @@ export default {
   
       &-short {
         z-index: 11;
-        width: 600px;
+        width: 500px;
         position: absolute;
-        top: 530px;
-        left: 1000px;
+        top: 600px;
+        left: 1170px;
       }
     }
   
@@ -83,7 +88,7 @@ export default {
   .block-start {
     &__images {
       &-long {
-        top: -130px;
+        top: 300px;
         left: 0;
       }
       &-start {
@@ -97,9 +102,9 @@ export default {
         left: 800px;
       }
       &-short {
-        width: 600px;
-        top: 450px;
-        left: 700px;
+        width: 500px;
+        top: 600px;
+        left: 800px;
       }
     }
   }
