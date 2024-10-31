@@ -14,7 +14,7 @@
             :logo="require('@/assets/img/IT VIBE.svg')"
             :height="40"
             />
-        <UILogotypes :items="getLogotypes()" />
+        <UILogotypes class="footer-layouts-info__logotypes" :items="getLogotypes()" />
     </div>
   </div>
 </template>
@@ -108,6 +108,22 @@ export default {
         flex-direction: row;
         align-items: center;
         padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .footer-layouts__tg-button {
+        border-radius: 0;
+        top: 400px;
+        width: 100%;
+        height: 95px;
+
+        &__img {
+            display: none;
+        }
+    }
+    .footer-layouts-info__logotypes {
+        display: none;
     }
 }
 </style>
