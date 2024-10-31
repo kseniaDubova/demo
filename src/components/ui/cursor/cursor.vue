@@ -1,40 +1,40 @@
 <template>
-    <div class="custom-cursor-container" @mousemove="customCursor">
-      <div class="custom-cursor__circle" :style="circleStyle" ref="customCursorCircle"></div>
-      <div class="custom-cursor__dot" :style="dotStyle" ref="customCursorDot"></div>
+    <div class="ui-custom-cursor-container" @mousemove="customCursor">
+      <div class="ui-custom-cursor__circle" :style="circleStyle" ref="customCursorCircle"></div>
+      <div class="ui-custom-cursor__dot" :style="dotStyle" ref="customCursorDot"></div>
       <slot></slot>
     </div>
   </template>
   
   <script>
   export default {
-    name: "CustomCursor",
+    name: "UICustomCursor",
     props: {
       targets: Array,
       circleColor: {
         type: String,
-        default: "#2f2f2f"
+        default: "#000000"
       },
       circleColorHover: {
         type: String,
-        default: "#ff0000"
+        default: "#000000"
       },
       dotColor: {
         type: String,
-        default: "#2f2f2f"
+        default: "#000000"
       },
       dotColorHover: {
         type: String,
-        default: "#ff0000"
+        default: "#000000"
       },
       hoverSize: {
         type: Number,
-        default: 1.5
+        default: 3
       }
     },
     data() {
       return {
-        scale: 1,
+        scale: 3,
         x: 0,
         y: 0,
         circleStyle: {
@@ -67,7 +67,7 @@
           this.circleStyle.borderColor = this.circleColorHover;
           this.dotStyle.backgroundColor = this.dotColorHover;
         } else {
-          this.scale = 1;
+          this.scale = 3;
           this.circleStyle.borderColor = this.circleColor;
           this.dotStyle.backgroundColor = this.dotColor;
         }
@@ -77,11 +77,11 @@
   </script>
   
   <style scoped>
-  .custom-cursor-container {
+  .ui-custom-cursor-container {
     position: relative;
     cursor: none;
   }
-  .custom-cursor__circle {
+  .ui-custom-cursor__circle {
     position: absolute;
     width: 34px;
     height: 34px;
@@ -90,7 +90,7 @@
     pointer-events: none;
     transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   }
-  .custom-cursor__dot {
+  .ui-custom-cursor__dot {
     position: absolute;
     width: 5px;
     height: 5px;

@@ -10,6 +10,7 @@
                     <router-view />           
                 </transition>
             </div> 
+            <FooterLayouts />
         </div>
 
         <transition name="side-menu-transition">
@@ -25,6 +26,7 @@
 
 <script>
 import HeaderLayouts from "@/layouts/header.vue";
+import FooterLayouts from "@/layouts/footer.vue";
 import UISideMenu from "@/components/ui/sideMenu/sideMenu.vue";
 
 export default {
@@ -32,6 +34,7 @@ export default {
     components: {
         HeaderLayouts,
         UISideMenu,
+        FooterLayouts,
     },
     data() {
         return {

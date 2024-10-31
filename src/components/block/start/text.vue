@@ -13,10 +13,10 @@
     </transition>
   </div>
   <transition name="button" appear>
-    <div class="block-start-button">
+    <a class="block-start-button">
       <div class="block-start-button__label">начать проект</div>
       <img class="block-start-button__img" src="@/assets/img/start/chevrons-right.svg">
-    </div>
+    </a>
   </transition>
 </template>
 
@@ -69,6 +69,7 @@ export default {
   transition: transform 1s ease;
 
   &__label {
+    text-decoration: none;
     display: flex;
     align-items: center;
     line-height: 100%;
@@ -86,9 +87,6 @@ export default {
     transform: scale(1.1);
     .block-start-button__img {
       transform: translateX(60%);
-    }
-    .g-cursor__circle {
-      border: 2px solid black;
     }
   }
 }
