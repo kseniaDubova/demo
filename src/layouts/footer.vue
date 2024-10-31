@@ -14,7 +14,7 @@
             :logo="require('@/assets/img/IT VIBE.svg')"
             :height="40"
             />
-        <UILogotypes class="footer-layouts-info__logotypes" :items="getLogotypes()" />
+        <UILogotypes :items="getLogotypes()" />
     </div>
   </div>
 </template>
@@ -121,9 +121,6 @@ export default {
         &__img {
             display: none;
         }
-    }
-    .footer-layouts-info__logotypes {
-        display: none;
     }
 }
 </style>

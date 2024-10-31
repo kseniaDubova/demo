@@ -8,7 +8,7 @@
         rel="noopeper noreferrer">
 
         <img class="ui-logotypes__item-img" :src="item.img" alt="logo">
-  </a>
+    </a>
 
   </div>
 </template>
@@ -21,6 +21,12 @@ export default {
         items: {
             typeof: Array,
             require: true,
+
+            // {
+            //         id: 0,
+            //         img: require(''),
+            //         link: "",
+            // },
         }, 
         gap: {
             typeof: Number,
@@ -58,4 +64,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+@media screen and (max-width: 760px) {
+    .ui-logotypes__item {
+        display: none;
+    }
+}
 </style>
