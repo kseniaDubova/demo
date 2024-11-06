@@ -1,17 +1,14 @@
 <template>
-  <div class="block-services" @mouseenter="showCursor" @mouseleave="hideCursor">
-        <UICustomCursor :targets="['']">
-            <UIStripe :count="8" color="white" :extension="true" :height="1"/>
-            <BlockServicesInfo />
-            <UIStripe :count="8" color="white" :extension="true" :height="1" :k="-3"/>
-        </UICustomCursor>
-  </div>
+    <div class="block-services" @mouseenter="showCursor" @mouseleave="hideCursor">
+        <UIStripe :count="8" color="white" :extension="true" :height="1"/>
+        <BlockServicesInfo />
+        <UIStripe :count="8" color="white" :extension="true" :height="1" :k="-3"/>
+    </div>
 </template>
 
 <script>
 import BlockServicesInfo from "@/components/block/services/info.vue";
 import UIStripe from "@/components/ui/stripe/stripe.vue";
-import UICustomCursor from "@/components/ui/cursor/cursor.vue";
 
 export default {
     name: 'BlockServices',
@@ -19,7 +16,6 @@ export default {
     components: {
         BlockServicesInfo,
         UIStripe,
-        UICustomCursor,
     },
 
     data() {

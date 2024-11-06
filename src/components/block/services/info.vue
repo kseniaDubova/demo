@@ -14,6 +14,12 @@
         <div class="block-services-info__cells">
             <div 
                 class="block-services-info__cell" 
+                data-aos="fade" 
+                data-aos-offset="-200"
+                data-aos-delay="0"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in"
+                data-aos-once="true"
                 v-for="cell in getServices()"
                 :key="cell.id">
                 <UIWhiteCard
