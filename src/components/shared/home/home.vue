@@ -1,25 +1,24 @@
 <template>
   <div class="home-content">
-    <BlockStart class="home-content__start"/>
-    <BlockAbout class="home-content__about"/>
+    <BlockStart class="home-content__start" />
+    <BlockAbout class="home-content__about" />
     <BlockServices />
   </div>
 </template>
 
 <script>
-import BlockStart from '@/components/block/start/start.vue';
-import BlockAbout from '@/components/block/about/about.vue';
-import BlockServices from '@/components/block/services/services.vue';
+import BlockStart from '@/components/block/start/start.vue'
+import BlockAbout from '@/components/block/about/about.vue'
+import BlockServices from '@/components/block/services/services.vue'
 
 export default {
-    name: "HomeContent",
+  name: 'HomeContent',
 
-    components: {
-        BlockStart,
-        BlockAbout,
-        BlockServices,
-    }
-
+  components: {
+    BlockStart,
+    BlockAbout,
+    BlockServices,
+  },
 }
 </script>
 

@@ -1,44 +1,42 @@
 <template>
-    <div class="block-services" @mouseenter="showCursor" @mouseleave="hideCursor">
-        <UIStripe :count="8" color="white" :extension="true" :height="1"/>
-        <BlockServicesInfo />
-        <UIStripe :count="8" color="white" :extension="true" :height="1" :k="-3"/>
-    </div>
+  <div class="block-services" @mouseenter="showCursor" @mouseleave="hideCursor">
+    <UIStripe :count="8" color="white" :extension="true" :height="1" />
+    <BlockServicesInfo />
+    <UIStripe :count="8" color="white" :extension="true" :height="1" :k="-3" />
+  </div>
 </template>
 
 <script>
-import BlockServicesInfo from "@/components/block/services/info.vue";
-import UIStripe from "@/components/ui/stripe/stripe.vue";
+import BlockServicesInfo from '@/components/block/services/info.vue'
+import UIStripe from '@/components/ui/stripe/stripe.vue'
 
 export default {
-    name: 'BlockServices',
+  name: 'BlockServices',
 
-    components: {
-        BlockServicesInfo,
-        UIStripe,
+  components: {
+    BlockServicesInfo,
+    UIStripe,
+  },
+
+  data() {
+    return {
+      isCursorVisiable: false,
+    }
+  },
+
+  methods: {
+    showCursor() {
+      this.isCursorVisiable = true
     },
-
-    data() {
-        return {
-            isCursorVisiable: false,
-        }
+    hideCursor() {
+      this.isCursorVisiable = false
     },
-
-    methods: {
-        showCursor() {
-            this.isCursorVisiable = true;
-        },
-        hideCursor() {
-            this.isCursorVisiable = false;
-        },
-    },
-
+  },
 }
 </script>
 
 <style lang="scss">
-.block-services
-{
-    width: 100%;
+.block-services {
+  width: 100%;
 }
 </style>

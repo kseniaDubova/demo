@@ -1,20 +1,19 @@
 <template>
   <div class="home">
-    <HomeContent/>
+    <HomeContent />
   </div>
 </template>
 
 <script>
-import HomeContent from '@/components/shared/home/home.vue';
+import HomeContent from '@/components/shared/home/home.vue'
 
 export default {
-    name: "Home",
+  name: 'Home',
 
-    components: {
-      HomeContent,
-    }
+  components: {
+    HomeContent,
+  },
 }
 </script>
 
-<style>
-</style>
+<style></style>

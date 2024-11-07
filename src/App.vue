@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import DefaultLayout from "@/layouts/default.vue";
+import DefaultLayout from '@/layouts/default.vue'
 
 const LAYOUTS = {
   default: DefaultLayout,
-};
+}
 
 export default {
   name: 'App',
@@ -18,17 +18,17 @@ export default {
   },
 
   watch: {
-      "$route.meta.background"(background) {
-          document.body.style.background = background;
-      },
+    '$route.meta.background'(background) {
+      document.body.style.background = background
+    },
   },
-  
-  computed: {
-      getLayout() {
-          const {layout} = this.$route.meta;
 
-          return LAYOUTS[layout];
-      },
+  computed: {
+    getLayout() {
+      const { layout } = this.$route.meta
+
+      return LAYOUTS[layout]
+    },
   },
 }
 </script>

@@ -5,17 +5,15 @@
 </template>
 
 <script>
-import BlockBlog from "@/components/block/blog/blog.vue";
+import BlockBlog from '@/components/block/blog/blog.vue'
 
 export default {
-    name: "BlogContent",
+  name: 'BlogContent',
 
-    components: {
-        BlockBlog,
-    }
+  components: {
+    BlockBlog,
+  },
 }
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

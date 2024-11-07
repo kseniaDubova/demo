@@ -5,38 +5,36 @@
 </template>
 
 <script>
-import BlogContent from "@/components/shared/blog/blog.vue";
+import BlogContent from '@/components/shared/blog/blog.vue'
 // import Api from "@/api/api";
 
 // const api = new Api();
 
 export default {
-    name: "Blog",
+  name: 'Blog',
 
-    components: {
-      BlogContent,
-    },
+  components: {
+    BlogContent,
+  },
 
-    // data() {
-    //   return {
-    //     posts: [],
-    //   }
-    // },
+  // data() {
+  //   return {
+  //     posts: [],
+  //   }
+  // },
 
-    // async created() {
-    //   await this.getPosts();
-    // },
+  // async created() {
+  //   await this.getPosts();
+  // },
 
-    // methods: {
-    //   async getPosts() {
-    //     const data = await api.getUpdates();
+  // methods: {
+  //   async getPosts() {
+  //     const data = await api.getUpdates();
 
-    //     console.log(98765, data);
-    //   }
-    // }
+  //     console.log(98765, data);
+  //   }
+  // }
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

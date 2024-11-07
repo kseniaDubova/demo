@@ -48,46 +48,48 @@ export default {
   },
   computed: {
     stripes() {
-      return Array.from({ length: this.count });
+      return Array.from({ length: this.count })
     },
   },
   methods: {
     stripeStyle(index) {
-      const baseHeight = this.height;
-      const baseMargin = this.margin;
-      let calculatedHeight;
-      let calculatedMargin;
+      const baseHeight = this.height
+      const baseMargin = this.margin
+      let calculatedHeight
+      let calculatedMargin
 
       if (this.extension) {
-        calculatedHeight = this.k >= 0
-          ? baseHeight * this.k * (index + 1)
-          : baseHeight * this.k * (this.count - index);
+        calculatedHeight =
+          this.k >= 0
+            ? baseHeight * this.k * (index + 1)
+            : baseHeight * this.k * (this.count - index)
 
-        calculatedMargin = this.k >= 0
-          ? baseMargin * this.k * (this.count - index)
-          : baseMargin * this.k * (index + 1);
+        calculatedMargin =
+          this.k >= 0
+            ? baseMargin * this.k * (this.count - index)
+            : baseMargin * this.k * (index + 1)
       } else {
-        calculatedHeight = baseHeight;
-        calculatedMargin = baseMargin;
+        calculatedHeight = baseHeight
+        calculatedMargin = baseMargin
       }
 
-      const angleInRadians = (Math.abs(this.rotate) * Math.PI) / 180;
-      const adjustedWidth = this.width / Math.cos(angleInRadians);
+      const angleInRadians = (Math.abs(this.rotate) * Math.PI) / 180
+      const adjustedWidth = this.width / Math.cos(angleInRadians)
 
-      const offsetLeft = (Math.tan(angleInRadians) * window.innerHeight) / 2;
+      const offsetLeft = (Math.tan(angleInRadians) * window.innerHeight) / 2
 
       return {
         backgroundColor: this.color,
         width: `${adjustedWidth}%`,
-        height: `${Math.abs(calculatedHeight)}px`, 
+        height: `${Math.abs(calculatedHeight)}px`,
         transform: `rotate(${this.rotate}deg)`,
-        margin: `${Math.abs(calculatedMargin)}px 0`, 
+        margin: `${Math.abs(calculatedMargin)}px 0`,
         marginLeft: `-${offsetLeft}px`,
         marginRight: `-${offsetLeft}px`,
-      };
+      }
     },
   },
-};
+}
 </script>
 
 <style scoped>

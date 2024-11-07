@@ -2,27 +2,33 @@
   <div class="block-start-text">
     <transition name="slogan" appear>
       <div class="block-start-text__slogan">
-        <h2 class="block-start-text__slogan-text" >The Future is already now</h2>
-      </div>      
+        <h2 class="block-start-text__slogan-text">The Future is already now</h2>
+      </div>
     </transition>
 
     <transition name="text" appear>
       <div class="block-start-text__info">
-        <p class="block-start-text__info-text">IT Vibe — эксперт в веб-интеграции. С 2010 года мы создаем масштабные решения для лидеров рынка, внедряя AI и поддерживая бизнес 24/7.</p>
-      </div>      
+        <p class="block-start-text__info-text">
+          IT Vibe — эксперт в веб-интеграции. С 2010 года мы создаем масштабные
+          решения для лидеров рынка, внедряя AI и поддерживая бизнес 24/7.
+        </p>
+      </div>
     </transition>
   </div>
   <transition name="button" appear>
     <a class="block-start-button">
       <div class="block-start-button__label">начать проект</div>
-      <img class="block-start-button__img" src="@/assets/img/start/chevrons-right.svg">
+      <img
+        class="block-start-button__img"
+        src="@/assets/img/start/chevrons-right.svg"
+      />
     </a>
   </transition>
 </template>
 
 <script>
 export default {
-    name: "BlockStartText"
+  name: 'BlockStartText',
 }
 </script>
 
@@ -40,7 +46,7 @@ export default {
       color: white;
       font-size: 64px;
       text-transform: uppercase;
-      font-family: "Montserrat-Bold";
+      font-family: 'Montserrat-Bold';
     }
   }
   &__info {
@@ -50,7 +56,7 @@ export default {
       color: white;
       line-height: 30px;
       font-size: 20px;
-      font-family: "Montserrat-Medium";
+      font-family: 'Montserrat-Medium';
       text-align: start;
     }
   }
@@ -76,7 +82,7 @@ export default {
     color: black;
     font-size: 26px;
     text-transform: uppercase;
-    font-family: "Montserrat-Bold";
+    font-family: 'Montserrat-Bold';
   }
 
   &__img {
@@ -95,14 +101,13 @@ export default {
   .block-start-text__info-text {
     font-size: 14px;
     line-height: 25px;
-  } 
+  }
   .block-start-text__slogan {
     width: 400px;
     &-text {
-      font-size: 50px;      
+      font-size: 50px;
     }
-
-  }  
+  }
   .block-start-button {
     top: 450px;
     width: 495px;
@@ -120,17 +125,16 @@ export default {
     width: 300px;
     &-text {
       font-size: 12px;
-      line-height: 20px;      
+      line-height: 20px;
     }
-  } 
+  }
   .block-start-text__slogan {
     width: 350px;
     &-text {
       font-size: 46px;
-      text-align: center;   
+      text-align: center;
     }
-
-  }  
+  }
   .block-start-button {
     border-radius: 0;
     top: 400px;
