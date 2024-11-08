@@ -63,7 +63,7 @@ export default {
   &__close {
     display: none;
     &-img {
-      width: 20px;
+      width: 25px;
     }
   }
 }

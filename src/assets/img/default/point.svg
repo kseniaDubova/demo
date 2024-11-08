@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512">
+<svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="200" height="300">
 <circle fill = 'white' cx="12" cy="2" r="3"/>
 <circle fill = 'white' cx="12" cy="12" r="3"/>
 <circle fill = 'white' cx="12" cy="22" r="3"/></svg>

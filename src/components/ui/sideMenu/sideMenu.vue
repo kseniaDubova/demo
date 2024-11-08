@@ -20,6 +20,18 @@
           >
         </div>
       </div>
+      <div class="ui-side-menu__contact">
+        <div class="ui-side-menu__contact__tg">
+          <a
+            class="ui-side-menu__contact__tg-button"
+            :href="'https://t.me/itvibebot'"
+          >
+            <div class="ui-side-menu__contact__tg-button__label">
+              telegram bot
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -95,6 +107,34 @@ export default {
 
       &:hover {
         color: rgba(12, 15, 20, 1);
+      }
+    }
+  }
+
+  &__contact {
+    &__tg {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      &-button {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        background: black;
+        width: 500px;
+        height: 100px;
+        transition: transform 1s ease;
+
+        &__label {
+          display: flex;
+          align-items: center;
+          line-height: 100%;
+          color: white;
+          font-size: 26px;
+          text-transform: uppercase;
+          font-family: 'Montserrat-Bold';
+        }
       }
     }
   }
