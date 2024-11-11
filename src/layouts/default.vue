@@ -46,7 +46,7 @@ export default {
         //{ id: 0, label: "Компания", link: "/company" },
         //{ id: 1, label: "Портфолио", link: "/portfolio" },
         { id: 2, label: 'Блог', link: '/blog' },
-        //{ id: 3, label: "Услуги", link: "/services" }
+        { id: 3, label: 'Услуги', link: '/services' },
       ]
     },
     onToggle(value) {

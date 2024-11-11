@@ -23,9 +23,10 @@ export default {
   //   }
   // },
 
-  // async created() {
-  //   await this.getPosts();
-  // },
+  created() {
+    window.scrollTo(0, 0)
+    // await this.getPosts();
+  },
 
   // methods: {
   //   async getPosts() {

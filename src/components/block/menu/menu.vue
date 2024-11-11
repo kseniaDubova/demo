@@ -39,11 +39,11 @@ export default {
           label: 'Блог',
           link: '/blog',
         },
-        // {
-        //     id: 3,
-        //     label: "Услуги",
-        //     link: "/services",
-        // },
+        {
+          id: 3,
+          label: 'Услуги',
+          link: '/services',
+        },
       ]
     },
 

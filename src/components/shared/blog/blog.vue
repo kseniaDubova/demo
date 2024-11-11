@@ -6,6 +6,7 @@
         :count="8"
         :height="3"
         :margin="10"
+        :width="110"
         :color="'white'"
         :rotate="50"
         class="blog-content__background-stripes-1"
@@ -39,22 +40,17 @@ export default {
 
 <style lang="scss">
 .blog-content {
+  position: relative;
   &__background {
-    &-stripes-1 {
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: auto;
-      width: 100%;
-      height: 100%;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &-stripes-1,
     &-stripes-2 {
-      position: fixed;
       z-index: 1;
-      top: 20%;
-      left: 0;
-      width: 100%;
-      height: 100%;
     }
   }
 }
