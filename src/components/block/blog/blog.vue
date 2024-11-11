@@ -55,7 +55,9 @@ export default {
 
 <style lang="scss">
 .block-blog {
+  position: relative;
   display: grid;
+  z-index: 10;
   grid-template-columns: 1fr;
   padding: 10%;
   gap: 40px;
