@@ -15,15 +15,17 @@
       </div>
     </transition>
   </div>
-  <transition name="button" appear>
-    <a class="block-start-button">
-      <div class="block-start-button__label">начать проект</div>
-      <img
-        class="block-start-button__img"
-        src="@/assets/img/start/chevrons-right.svg"
-      />
-    </a>
-  </transition>
+  <router-link :to="'/services'">
+    <transition name="button" appear>
+      <a class="block-start-button">
+        <div class="block-start-button__label">начать проект</div>
+        <img
+          class="block-start-button__img"
+          src="@/assets/img/start/chevrons-right.svg"
+        />
+      </a>
+    </transition>
+  </router-link>
 </template>
 
 <script>

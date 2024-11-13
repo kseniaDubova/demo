@@ -41,6 +41,7 @@ export default {
   padding: 2% 5%;
   transition: all 1s ease;
   min-height: 300px;
+  text-decoration: none;
 
   &__img {
     position: absolute;
@@ -56,6 +57,7 @@ export default {
       font-size: 32px;
       text-align: center;
       font-family: 'Montserrat-SemiBold';
+      text-decoration: none;
     }
 
     &-text {
@@ -64,6 +66,7 @@ export default {
       font-size: 20px;
       text-align: center;
       font-family: 'Montserrat-Medium';
+      text-decoration: none;
     }
   }
 

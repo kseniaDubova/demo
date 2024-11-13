@@ -41,11 +41,16 @@ export default {
       type: String,
       default: 'white',
     },
+    flexDirection: {
+      type: String,
+      default: 'row',
+    },
   },
 
   computed: {
     cardStyle() {
       return {
+        flexDirection: this.flexDirection,
         background: this.background,
         padding: `${this.padding}%`,
         border: `${this.borderSize}px ${this.borderType} ${this.borderColor}`,

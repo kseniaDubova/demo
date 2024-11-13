@@ -12,26 +12,28 @@
       Что мы можем?
     </h2>
 
-    <div class="block-services-info__cells">
-      <div
-        class="block-services-info__cell"
-        data-aos="fade"
-        data-aos-offset="-200"
-        data-aos-delay="0"
-        data-aos-duration="1500"
-        data-aos-easing="ease-in"
-        data-aos-once="true"
-        v-for="cell in getServices()"
-        :key="cell.id"
-      >
-        <UIWhiteCard
-          :img="cell.img"
-          :text="cell.text"
-          :label="cell.label"
-          :link="cell.link"
-        />
+    <router-link :style="{ textDecoration: 'none' }" :to="'/services'">
+      <div class="block-services-info__cells">
+        <div
+          class="block-services-info__cell"
+          data-aos="fade"
+          data-aos-offset="-200"
+          data-aos-delay="0"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in"
+          data-aos-once="true"
+          v-for="cell in getServices()"
+          :key="cell.id"
+        >
+          <UIWhiteCard
+            :img="cell.img"
+            :text="cell.text"
+            :label="cell.label"
+            :link="cell.link"
+          />
+        </div>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -116,6 +118,7 @@ export default {
     grid-template-columns: 1fr 1fr;
     padding: 5%;
     gap: 5%;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 760px) {
