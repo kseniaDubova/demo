@@ -2,13 +2,20 @@
   <div class="block-constructor">
     <UICard :padding="5" :borderRadius="20" :flexDirection="column">
       <div class="block-constructor__form">
-        <UIProgressBar :currentStep="currentStep" :totalSteps="totalSteps" />
+        <div class="block-constructor__form-bar">
+          <img
+            class="block-constructor__form-bar__img"
+            src="@/assets/img/start/chevrons-right.svg"
+            @click="goToPreviousStep"
+          />
+          <UIProgressBar :currentStep="currentStep" :totalSteps="totalSteps" />
+        </div>
 
         <KeepAlive>
-          <component :is="currentStepComponent" />
+          <component :is="currentStepComponent" @option="goToNextStep" />
         </KeepAlive>
 
-        <div class="block-constructor__steps">
+        <!-- <div class="block-constructor__steps">
           <button
             class="block-constructor__bt"
             v-if="currentStep > 1"
@@ -23,9 +30,9 @@
           >
             Далее
           </button>
-        </div>
+        </div> -->
 
-        <button v-if="currentStep == 5" class="block-constructor__bt">
+        <button v-if="currentStep == totalSteps" class="block-constructor__bt">
           Отправить
         </button>
       </div>
@@ -36,13 +43,7 @@
 <script>
 import UICard from '@/components/ui/card/card.vue'
 import UIProgressBar from '@/components/ui/progress-bar/progress-bar.vue'
-import {
-  Step1,
-  Step2,
-  Step3,
-  Step4,
-  Step5,
-} from '@/components/shared/services/steps'
+import { Step1, Step2, Step3, Step4 } from '@/components/shared/services/steps'
 
 export default {
   name: 'BlockConstructor',
@@ -54,20 +55,19 @@ export default {
     Step2,
     Step3,
     Step4,
-    Step5,
   },
 
   data() {
     return {
       currentStep: 1,
-      totalSteps: 5,
+      totalSteps: 4,
       sendForm: false,
     }
   },
 
   computed: {
     currentStepComponent() {
-      const steps = [Step1, Step2, Step3, Step4, Step5]
+      const steps = [Step1, Step2, Step3, Step4]
       return steps[this.currentStep - 1]
     },
   },
@@ -98,6 +98,17 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &-bar {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      &__img {
+        width: 30px;
+        transform: rotate(180deg);
+      }
+    }
   }
 
   &__steps {

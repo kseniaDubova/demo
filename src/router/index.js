@@ -5,6 +5,7 @@ import Company from '@/views/company/company.vue'
 import Portfolio from '@/views/portfolio/portfolio.vue'
 import Blog from '@/views/blog/blog.vue'
 import Services from '@/views/services/services.vue'
+import ErrorPage from '@/views/404/ErrorPage.vue'
 
 const BACKGROUNDS = {
   default: '#000000',
@@ -51,6 +52,15 @@ const routes = [
     path: '/services',
     name: 'Услуги',
     component: Services,
+    meta: {
+      layout: 'default',
+      background: BACKGROUNDS.default,
+    },
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: ErrorPage,
     meta: {
       layout: 'default',
       background: BACKGROUNDS.default,
