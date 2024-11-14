@@ -145,4 +145,20 @@ export default {
     }
   }
 }
+@media screen and (max-width: 760px) {
+  .ui-list {
+    &__label {
+      font-size: 30px;
+    }
+
+    &__option-name {
+      &__label {
+        font-size: 18px;
+      }
+      &__img {
+        display: none;
+      }
+    }
+  }
+}
 </style>

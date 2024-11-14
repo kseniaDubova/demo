@@ -40,6 +40,7 @@ export default {
     background-color: black;
     transition: width 0.3s ease;
     border-radius: 20px;
+    margin-bottom: 10px;
   }
 
   &__text {
