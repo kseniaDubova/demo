@@ -133,11 +133,7 @@ export default {
 @media screen and (max-width: 760px) {
   .block-start {
     &__images {
-      &-start,
-      &-shadow,
-      &-short {
-        display: none;
-      }
+      display: none;
     }
   }
 }
