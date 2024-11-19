@@ -34,16 +34,16 @@ export default {
         //     label: "Портфолио",
         //     link: "/portfolio",
         // },
-        // {
-        //   id: 2,
-        //   label: 'Блог',
-        //   link: '/blog',
-        // },
-        // {
-        //   id: 3,
-        //   label: 'Услуги',
-        //   link: '/services',
-        // },
+        {
+          id: 2,
+          label: 'Блог',
+          link: '/blog',
+        },
+        {
+          id: 3,
+          label: 'Услуги',
+          link: '/services',
+        },
       ]
     },
 
