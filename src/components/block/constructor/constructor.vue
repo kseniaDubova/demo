@@ -32,9 +32,9 @@
           </button>
         </div> -->
 
-        <button v-if="currentStep == totalSteps" class="block-constructor__bt">
+        <!-- <button v-if="currentStep == totalSteps" class="block-constructor__bt">
           Отправить
-        </button>
+        </button> -->
       </div>
     </UICard>
   </div>

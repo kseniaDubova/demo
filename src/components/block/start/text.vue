@@ -69,22 +69,24 @@ export default {
   top: 600px;
   display: flex;
   justify-content: center;
-  background: white;
-  border: 2px solid white;
+  background: black;
+  border: 1px solid white;
+  border-left: none;
   border-radius: 0 120px 120px 0;
   width: 600px;
   height: 120px;
   transition: transform 1s ease;
+  box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 1);
 
   &__label {
     text-decoration: none;
     display: flex;
     align-items: center;
     line-height: 100%;
-    color: black;
+    color: white;
     font-size: 26px;
     text-transform: uppercase;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Light';
   }
 
   &__img {

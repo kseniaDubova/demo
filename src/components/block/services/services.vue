@@ -1,7 +1,7 @@
 <template>
   <div class="block-services" @mouseenter="showCursor" @mouseleave="hideCursor">
     <UIStripe :count="8" color="white" :extension="true" :height="1" />
-    <BlockServicesInfo />
+    <BlockServicesInfo :options="options" :label="label"/>
     <UIStripe :count="8" color="white" :extension="true" :height="1" :k="-3" />
   </div>
 </template>
@@ -16,6 +16,16 @@ export default {
   components: {
     BlockServicesInfo,
     UIStripe,
+  },
+
+  props: {
+    options: {
+      type: Array,
+    },
+    label: {
+      type: String,
+      default: 'Что мы можем?',
+    },
   },
 
   data() {

@@ -74,21 +74,23 @@ export default {
       text-decoration: none;
       display: flex;
       justify-content: center;
-      background: white;
-      border: 2px solid white;
+      background: black;
+      border: 1px solid white;
+      border-right: none;
       border-radius: 120px 0 0 120px;
       width: 500px;
       height: 100px;
       transition: transform 1s ease;
+      box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 1);
 
       &__label {
         display: flex;
         align-items: center;
         line-height: 100%;
-        color: black;
+        color: white;
         font-size: 26px;
         text-transform: uppercase;
-        font-family: 'Montserrat-Bold';
+        font-family: 'Montserrat-Light';
       }
 
       &__img {
@@ -119,6 +121,7 @@ export default {
     top: 400px;
     width: 100%;
     height: 95px;
+    border-left: none;
 
     &__img {
       display: none;
