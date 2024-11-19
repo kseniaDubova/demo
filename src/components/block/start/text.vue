@@ -144,6 +144,7 @@ export default {
     top: 400px;
     width: 100%;
     height: 95px;
+    border-right: none;
 
     &__img {
       display: none;

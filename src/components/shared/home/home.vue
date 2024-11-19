@@ -74,7 +74,7 @@ export default {
 <style lang="scss">
 .home-content {
   height: 100%;
-  //overflow-x: hidden;
+  overflow-x: hidden;
   &__start {
     height: 900px;
     margin-bottom: 200px;
