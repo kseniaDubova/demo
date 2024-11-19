@@ -39,9 +39,16 @@
       </div>
 
       <div class="checkbox-container">
-        <input type="checkbox" v-model="formData.agreed" id="agreement" required />
+        <input
+          type="checkbox"
+          v-model="formData.agreed"
+          id="agreement"
+          required
+        />
         <label for="agreement">
-          Принимаю условия <a href="/terms" target="_blank">пользовательского соглашения</a> и <a href="/privacy" target="_blank">политики конфиденциальности</a>
+          Принимаю условия
+          <a href="/terms" target="_blank">пользовательского соглашения</a> и
+          <a href="/privacy" target="_blank">политики конфиденциальности</a>
         </label>
       </div>
 
@@ -77,7 +84,6 @@ export default {
       console.log(this.formData)
     },
   },
-
 }
 </script>
 

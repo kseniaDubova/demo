@@ -13,26 +13,26 @@
     </h2>
 
     <!-- <router-link :style="{ textDecoration: 'none' }" :to="options.link"> -->
-      <div class="block-services-info__cells">
-        <div
-          class="block-services-info__cell"
-          data-aos="fade"
-          data-aos-offset="-200"
-          data-aos-delay="0"
-          data-aos-duration="1500"
-          data-aos-easing="ease-in"
-          data-aos-once="true"
-          v-for="cell in options"
-          :key="cell.id"
-        >
-          <UIWhiteCard
-            :img="cell.img"
-            :text="cell.text"
-            :label="cell.label"
-            :link="cell.link"
-          />
-        </div>
+    <div class="block-services-info__cells">
+      <div
+        class="block-services-info__cell"
+        data-aos="fade"
+        data-aos-offset="-200"
+        data-aos-delay="0"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in"
+        data-aos-once="true"
+        v-for="cell in options"
+        :key="cell.id"
+      >
+        <UIWhiteCard
+          :img="cell.img"
+          :text="cell.text"
+          :label="cell.label"
+          :link="cell.link"
+        />
       </div>
+    </div>
     <!-- </router-link> -->
   </div>
 </template>

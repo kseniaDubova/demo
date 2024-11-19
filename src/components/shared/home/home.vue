@@ -2,7 +2,7 @@
   <div class="home-content">
     <BlockStart class="home-content__start" />
     <BlockAbout class="home-content__about" />
-    <BlockServices :options="getServices()"/>
+    <BlockServices :options="getServices()" />
   </div>
 </template>
 
@@ -67,7 +67,7 @@ export default {
         },
       ]
     },
-  }
+  },
 }
 </script>
 

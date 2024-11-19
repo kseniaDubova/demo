@@ -1,6 +1,6 @@
 <template>
   <div class="services-content">
-    <BlockServices :options="getServices()" :label="'Что у нас в арсенале:'"/>
+    <BlockServices :options="getServices()" :label="'Что у нас в арсенале:'" />
     <BlockConstructor />
   </div>
 </template>
@@ -61,7 +61,7 @@ export default {
         },
       ]
     },
-  }
+  },
 }
 </script>
 
