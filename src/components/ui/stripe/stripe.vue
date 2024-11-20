@@ -19,7 +19,7 @@ export default {
     },
     color: {
       type: String,
-      default: '#000',
+      default: 'white',
     },
     width: {
       type: String,
