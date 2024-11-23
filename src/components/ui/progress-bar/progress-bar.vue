@@ -30,7 +30,7 @@ export default {
 .ui-progress-bar {
   position: relative;
   height: 10px;
-  background-color: rgb(226, 226, 226);
+  background-color: rgba(240, 240, 240, 1);
   margin-bottom: 20px;
   border-radius: 20px;
   width: 200px;

@@ -93,7 +93,7 @@ export default {
       width: 100%;
       padding: 7px 30px;
       justify-content: center;
-      border-radius: 50px;
+      border-radius: 20px;
     }
 
     &__text {

@@ -89,7 +89,7 @@ export default {
       }
 
       img {
-        max-width: 100%;
+        width: 250px;
         margin-bottom: 70px;
         transition: all 1s ease;
       }

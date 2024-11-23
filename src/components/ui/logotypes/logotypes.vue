@@ -63,6 +63,9 @@ export default {
 </script>
 
 <style lang="scss">
+.ui-logotypes__item {
+  width: 100px;
+}
 @media screen and (max-width: 760px) {
   .ui-logotypes__item {
     display: none;

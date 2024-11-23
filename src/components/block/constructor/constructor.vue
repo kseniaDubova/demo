@@ -5,7 +5,7 @@
         <div class="block-constructor__form-bar">
           <img
             class="block-constructor__form-bar__img"
-            src="@/assets/img/start/chevrons-right.svg"
+            src="@/assets/img/start/chevrons-right black.svg"
             @click="goToPreviousStep"
           />
           <UIProgressBar :currentStep="currentStep" :totalSteps="totalSteps" />
@@ -14,27 +14,6 @@
         <KeepAlive>
           <component :is="currentStepComponent" @option="goToNextStep" />
         </KeepAlive>
-
-        <!-- <div class="block-constructor__steps">
-          <button
-            class="block-constructor__bt"
-            v-if="currentStep > 1"
-            @click="goToPreviousStep"
-          >
-            Назад
-          </button>
-          <button
-            class="block-constructor__bt"
-            v-if="currentStep < totalSteps"
-            @click="goToNextStep"
-          >
-            Далее
-          </button>
-        </div> -->
-
-        <!-- <button v-if="currentStep == totalSteps" class="block-constructor__bt">
-          Отправить
-        </button> -->
       </div>
     </UICard>
   </div>

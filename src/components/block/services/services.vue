@@ -1,8 +1,8 @@
 <template>
   <div class="block-services" @mouseenter="showCursor" @mouseleave="hideCursor">
-    <UIStripe :count="8" color="white" :extension="true" :height="1" />
+    <UIStripe :count="8" color="white" :extension="true" :height="2" />
     <BlockServicesInfo :options="options" :label="label" />
-    <UIStripe :count="8" color="white" :extension="true" :height="1" :k="-3" />
+    <UIStripe :count="8" color="white" :extension="true" :height="2" :k="-3" />
   </div>
 </template>
 

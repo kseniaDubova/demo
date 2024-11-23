@@ -29,17 +29,17 @@ export default {
         {
           id: 1,
           label: 'В течение недели',
-          img: require('@/assets/img/steps/st3_1.svg'),
+          img: require('@/assets/img/steps/st3_2.svg'),
         },
         {
           id: 2,
           label: 'В течение месяца',
-          img: require('@/assets/img/steps/st3_1.svg'),
+          img: require('@/assets/img/steps/st3_3.svg'),
         },
         {
           id: 3,
           label: 'Больше месяца',
-          img: require('@/assets/img/steps/st3_1.svg'),
+          img: require('@/assets/img/steps/st3_4.svg'),
         },
       ]
     },

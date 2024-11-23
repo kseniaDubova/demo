@@ -44,11 +44,14 @@ export default {
   text-decoration: none;
 
   &__img {
+    z-index: 6;
+    width: 250px;
     position: absolute;
     padding-top: 3%;
   }
 
   &__info {
+    z-index: 7;
     margin-left: 20%;
 
     &-label {

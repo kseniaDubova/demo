@@ -68,6 +68,8 @@ export default {
           this.k >= 0
             ? baseMargin * this.k * (this.count - index)
             : baseMargin * this.k * (index + 1)
+
+        if (Math.abs(calculatedMargin) <= 1) calculatedMargin = 3
       } else {
         calculatedHeight = baseHeight
         calculatedMargin = baseMargin

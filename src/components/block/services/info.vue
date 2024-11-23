@@ -62,6 +62,7 @@ export default {
 .block-services-info {
   background: white;
   height: 1500px;
+  margin: 3px 0;
 
   &__label {
     color: black;
@@ -82,9 +83,9 @@ export default {
     text-decoration: none;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .block-services-info {
-    height: 2900px;
+    height: 2700px;
 
     &__label {
       font-size: 60px;

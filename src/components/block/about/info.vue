@@ -62,13 +62,13 @@ export default {
 .block-about-info {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 100px;
   margin-top: 100px;
 }
 
 @media screen and (max-width: 760px) {
   .block-about-info {
-    gap: 30px;
+    gap: 70px;
     margin-top: 50px;
   }
 }
