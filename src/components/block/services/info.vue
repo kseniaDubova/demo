@@ -79,13 +79,13 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 5%;
-    gap: 5%;
+    gap: 10% 5%;
     text-decoration: none;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .block-services-info {
-    height: 2700px;
+    height: 2900px;
 
     &__label {
       font-size: 60px;
@@ -96,8 +96,22 @@ export default {
     &__cells {
       height: auto;
       grid-template-columns: 1fr;
+      gap: 5% 2%;
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  .block-services-info {
+    height: 2700px;
+
+    &__cells {
       gap: 2%;
     }
+  }
+}
+@media screen and (max-width: 500px) {
+  .block-services-info {
+    height: 2500px;
   }
 }
 </style>

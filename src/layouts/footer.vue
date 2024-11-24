@@ -48,7 +48,7 @@ export default {
         },
         {
           id: 3,
-          img: require('@/assets/img/footer/phone.svg'),
+          img: require('@/assets/img/footer/phone_2.svg'),
           link: '+79178260988',
         },
       ]
