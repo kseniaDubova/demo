@@ -1,7 +1,7 @@
 <template>
   <div class="services-content">
     <BlockServices2 :options="getServices()" />
-    <BlockConstructor />
+    <BlockConstructor :id="'constructor'" />
   </div>
 </template>
 

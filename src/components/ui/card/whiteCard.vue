@@ -114,4 +114,21 @@ export default {
     }
   }
 }
+@media screen and (max-width: 400px) {
+  .ui-white-card {
+    padding: 0;
+
+    &__info {
+      &-label {
+        line-height: 35px;
+        font-size: 23px;
+      }
+
+      &-text {
+        line-height: 25px;
+        font-size: 15px;
+      }
+    }
+  }
+}
 </style>

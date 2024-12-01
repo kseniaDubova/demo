@@ -109,9 +109,18 @@ export default {
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .block-services-info {
-    height: 2500px;
+    height: 2300px;
+
+    &__cells {
+      padding: 2%;
+    }
+
+    &__label {
+      font-size: 40px;
+      margin-bottom: 80px;
+    }
   }
 }
 </style>

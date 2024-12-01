@@ -24,22 +24,22 @@ export default {
         {
           id: 0,
           label: 'Немедленно',
-          img: require('@/assets/img/steps/st3_1.svg'),
+          img: require('@/assets/img/steps/day.svg'),
         },
         {
           id: 1,
           label: 'В течение недели',
-          img: require('@/assets/img/steps/st3_2.svg'),
+          img: require('@/assets/img/steps/week.svg'),
         },
         {
           id: 2,
           label: 'В течение месяца',
-          img: require('@/assets/img/steps/st3_3.svg'),
+          img: require('@/assets/img/steps/month.svg'),
         },
         {
           id: 3,
           label: 'Больше месяца',
-          img: require('@/assets/img/steps/st3_4.svg'),
+          img: require('@/assets/img/steps/year.svg'),
         },
       ]
     },

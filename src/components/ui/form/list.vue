@@ -14,11 +14,6 @@
         <img class="ui-list__option-name__img" :src="option.img" />
         <p class="ui-list__option-name__label">{{ option.label }}</p>
       </div>
-
-      <img
-        class="ui-list__option-img"
-        src="@/assets/img/start/chevrons-right.svg"
-      />
     </div>
   </div>
 </template>
@@ -139,7 +134,7 @@ export default {
       font-size: 25px;
       font-family: 'Montserrat-Light';
       color: black;
-      text-align: center;
+      text-align: left;
     }
 
     &__img {
@@ -159,23 +154,24 @@ export default {
         font-size: 18px;
       }
       &__img {
-        display: none;
+        width: 100px;
       }
     }
   }
 }
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 500px) {
   .ui-list {
     &__label {
-      font-size: 30px;
+      font-size: 20px;
     }
 
     &__option-name {
       &__label {
-        font-size: 18px;
+        font-size: 12px;
       }
       &__img {
-        display: none;
+        width: 50px;
       }
     }
   }

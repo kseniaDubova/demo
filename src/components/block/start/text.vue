@@ -15,15 +15,15 @@
       </div>
     </transition>
   </div>
-  <router-link :to="'/services'">
+  <router-link :to="{ name: 'Услуги', hash: '#constructor' }">
     <transition name="button" appear>
-      <a class="block-start-button">
+      <div class="block-start-button">
         <div class="block-start-button__label">начать проект</div>
         <img
           class="block-start-button__img"
           src="@/assets/img/start/chevrons-right.svg"
         />
-      </a>
+      </div>
     </transition>
   </router-link>
 </template>

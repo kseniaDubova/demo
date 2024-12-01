@@ -9,8 +9,23 @@ import ServicesContent from '@/components/shared/services/services.vue'
 export default {
   name: 'Services',
 
-  created() {
-    window.scrollTo(0, 0)
+  mounted() {
+    this.scrollToHash()
+  },
+
+  methods: {
+    scrollToHash() {
+      this.$nextTick(() => {
+        if (this.$route.hash) {
+          const element = document.querySelector(this.$route.hash)
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+          }
+        } else {
+          window.scrollTo(0, 0)
+        }
+      })
+    },
   },
 
   components: {
