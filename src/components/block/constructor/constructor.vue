@@ -73,10 +73,11 @@ export default {
   padding: 10%;
 
   &__form {
+    height: 800px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     &-bar {
       display: flex;
@@ -108,6 +109,12 @@ export default {
     border: none;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .block-constructor__form {
+    height: 700px;
   }
 }
 </style>
